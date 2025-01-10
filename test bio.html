@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdallah Nofan - Premium Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    /* Reset and Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f9;
+      color: #333;
+      line-height: 1.8;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007bff;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+
+    /* Header Section */
+    header {
+      background: rgba(46, 59, 78, 0.9);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      font-weight: bold;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header nav a {
+      color: #ccc;
+      margin: 0 15px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      position: relative;
+    }
+
+    header nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: white;
+      transition: width 0.3s;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
+    header nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Hero Section */
+    #hero {
+      background: linear-gradient(135deg, #2e3b4e, #4e5a6d);
+      color: white;
+      text-align: center;
+      padding: 150px 20px 100px;
+      margin-top: 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    #hero p {
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+      animation: fadeInDown 1.5s ease-in-out;
+    }
+
+    #hero .cta-button {
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      transition: background 0.3s ease;
+    }
+
+    #hero .cta-button:hover {
+      background: #0056b3;
+    }
+
+    /* Video Background */
+    #hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* About Me Section */
+    #about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 60px 20px;
+      background: white;
+      margin: 40px auto;
+      max-width: 1200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #about .about-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    #about .about-text h2 {
+      font-size: 2.5rem;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    #about .about-text p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 20px;
+      line-height: 1.9;
+    }
+
+    #about .about-image {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    #about .about-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Partners Section */
+    #partners {
+      background: #f4f4f9;
+      color: #333;
+      padding: 60px 20px;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #partners h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .partner-logos {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      animation: scrollIcons 20s linear infinite;
+    }
+
+    .partner-logos img {
+      width: 60px;
+      height: auto;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .partner-logos img:hover {
+      transform: scale(1.2);
+      filter: brightness(1.2);
+    }
+
+    @keyframes scrollIcons {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Footer Section */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer .social-icons {
+      margin-bottom: 20px;
+    }
+
+    footer .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    footer .social-icons a:hover {
+      color: #007bff;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design for Mobile */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header nav a {
+        font-size: 0.9rem;
+      }
+
+      #hero h2 {
+        font-size: 2rem;
+      }
+
+      #hero p {
+        font-size: 1.2rem;
+      }
+
+      #about {
+        flex-direction: column;
+      }
+
+      .partner-logos img {
+        width: 50px;
+      }
+
+      #contact .social-icons {
+        gap: 20px;
+      }
+
+      #contact .social-icons a {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Abdallah Nofan</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact Me</a>
+      <a href="#partners">Partners</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <video autoplay muted loop>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <h2>Welcome to My Portfolio</h2>
+    <p>A journey of growth, achievements, and inspiration</p>
+    <a href="#about" class="cta-button">Connect with Me</a>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Abdallah Nofan is an ambitious ethical hacker raised in Jordan, where his passion for technology and problem-solving began. His journey led him to uncover critical vulnerabilities in systems, earning him international recognition in the bug bounty community.  
+        <br><br>
+        After making significant contributions, he relocated to the UK to work at Meta’s London office, specifically at King’s Cross, where he continues to tackle complex cybersecurity challenges. Simultaneously, he is pursuing his sixth year in medical school, blending his expertise in technology and medicine. Abdallah's mission is to innovate and protect, ensuring safety in both digital and healthcare landscapes.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="https://via.placeholder.com/400" alt="Abdallah Nofan">
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section id="partners">
+    <h2>Our Partners</h2>
+    <div class="partner-logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>© Abdallah Nofan 2025. All rights reserved.</p>
+    <p><a href="#hero">Back to top</a></p>
+  </footer>
+
+</body>
+</html>
