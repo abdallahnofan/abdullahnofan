@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abdallah Nofan - Premium Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <style>
     /* Reset and Global Styles */
@@ -17,28 +17,28 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: #f4f4f9;
-      color: #333;
+      background: #F3D9E5; /* Mimi Pink */
+      color: #4A3267; /* English Violet */
       line-height: 1.8;
       scroll-behavior: smooth;
     }
 
     a {
       text-decoration: none;
-      color: #007bff;
+      color: #D6E38A; /* Bitcoin */
       transition: color 0.3s ease;
     }
 
     a:hover {
-      color: #0056b3;
+      color: #C6BADE; /* Thistle */
     }
 
     /* Header Section */
     header {
-      background: rgba(46, 59, 78, 0.9);
+      background: rgba(74, 50, 103, 0.9); /* English Violet with transparency */
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 10px; /* Smaller padding */
       position: fixed;
       width: 100%;
       top: 0;
@@ -48,19 +48,20 @@
 
     header h1 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 2.5rem;
+      font-size: 1.8rem; /* Smaller header */
       letter-spacing: 2px;
       font-weight: bold;
       animation: fadeInDown 1s ease-in-out;
     }
 
     header nav a {
-      color: #ccc;
-      margin: 0 15px;
-      font-size: 1rem;
+      color: #F7B9C4; /* Pink */
+      margin: 0 10px; /* Reduced margin */
+      font-size: 0.8rem; /* Smaller font size */
       text-transform: uppercase;
       font-weight: bold;
       position: relative;
+      transition: all 0.3s ease;
     }
 
     header nav a::after {
@@ -79,40 +80,45 @@
       width: 100%;
     }
 
+    header nav a:hover {
+      transform: translateY(-3px); /* Subtle hover animation */
+    }
+
     /* Hero Section */
     #hero {
-      background: linear-gradient(135deg, #2e3b4e, #4e5a6d);
+      background: linear-gradient(135deg, #4A3267, #C6BADE); /* English Violet to Thistle */
       color: white;
       text-align: center;
-      padding: 150px 20px 100px;
+      padding: 120px 20px 80px; /* Adjusted padding */
       margin-top: 60px;
       position: relative;
       overflow: hidden;
     }
 
     #hero h2 {
-      font-size: 3rem;
+      font-size: 2.5rem; /* Adjusted size */
       margin-bottom: 20px;
       animation: fadeInDown 1s ease-in-out;
     }
 
     #hero p {
-      font-size: 1.4rem;
+      font-size: 1.2rem; /* Adjusted size */
       margin-bottom: 30px;
       animation: fadeInDown 1.5s ease-in-out;
     }
 
     #hero .cta-button {
-      background: #007bff;
-      color: white;
+      background: #D6E38A; /* Bitcoin */
+      color: #4A3267; /* English Violet */
       padding: 10px 20px;
       border-radius: 5px;
-      font-size: 1.2rem;
-      transition: background 0.3s ease;
+      font-size: 1rem; /* Smaller font size */
+      transition: background 0.3s ease, transform 0.3s ease;
     }
 
     #hero .cta-button:hover {
-      background: #0056b3;
+      background: #C6BADE; /* Thistle */
+      transform: scale(1.1); /* Add hover animation */
     }
 
     /* Video Background */
@@ -145,35 +151,30 @@
     }
 
     #about .about-text h2 {
-      font-size: 2.5rem;
-      color: #444;
+      font-size: 2rem; /* Adjusted size */
+      color: #4A3267; /* English Violet */
       margin-bottom: 20px;
     }
 
     #about .about-text p {
-      font-size: 1.2rem;
+      font-size: 1rem; /* Adjusted size */
       color: #555;
       margin-bottom: 20px;
-      line-height: 1.9;
+      line-height: 1.8;
     }
 
-    #about .about-image {
-      flex: 1;
-      min-width: 300px;
-      text-align: center;
-    }
-
-    #about .about-image img {
-      max-width: 100%;
+    #about .about-text p img {
+      width: 20px; /* UK flag size */
       height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      vertical-align: middle;
+      margin-left: 5px;
+      animation: bounce 2s infinite; /* Animated UK flag */
     }
 
     /* Partners Section */
     #partners {
-      background: #f4f4f9;
-      color: #333;
+      background: #F7B9C4; /* Pink */
+      color: #4A3267; /* English Violet */
       padding: 60px 20px;
       text-align: center;
       overflow: hidden;
@@ -181,8 +182,11 @@
     }
 
     #partners h2 {
-      font-size: 2.5rem;
+      font-size: 2rem; /* Adjusted size */
       margin-bottom: 40px;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
     .partner-logos {
@@ -214,7 +218,7 @@
 
     /* Footer Section */
     footer {
-      background: #222;
+      background: #4A3267; /* English Violet */
       color: white;
       text-align: center;
       padding: 40px 20px;
@@ -227,16 +231,39 @@
     footer .social-icons a {
       color: white;
       margin: 0 10px;
-      font-size: 1.5rem;
+      font-size: 1.5rem; /* Adjusted size */
       transition: color 0.3s ease;
     }
 
     footer .social-icons a:hover {
-      color: #007bff;
+      color: #F7B9C4; /* Pink */
     }
 
     footer p {
       margin: 5px 0;
+      font-size: 0.9rem; /* Adjusted size */
+    }
+
+    /* Back to Top Button */
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #D6E38A; /* Bitcoin */
+      color: #4A3267; /* English Violet */
+      border: none;
+      border-radius: 50%;
+      width: 40px; /* Smaller size */
+      height: 40px; /* Smaller size */
+      font-size: 1.2rem; /* Adjusted size */
+      cursor: pointer;
+      display: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    #back-to-top:hover {
+      background: #C6BADE; /* Thistle */
+      transform: scale(1.1); /* Add hover animation */
     }
 
     /* Animations */
@@ -271,38 +298,64 @@
       }
     }
 
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+
     /* Responsive Design for Mobile */
     @media (max-width: 768px) {
       header h1 {
-        font-size: 2rem;
+        font-size: 1.5rem; /* Smaller header */
+      }
+
+      header nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
       }
 
       header nav a {
-        font-size: 0.9rem;
+        font-size: 0.8rem; /* Smaller font size */
+        margin: 5px 0;
       }
 
       #hero h2 {
-        font-size: 2rem;
+        font-size: 2rem; /* Adjusted size */
       }
 
       #hero p {
-        font-size: 1.2rem;
+        font-size: 1rem; /* Adjusted size */
       }
 
       #about {
         flex-direction: column;
+        padding: 40px 20px;
       }
 
-      .partner-logos img {
-        width: 50px;
+      #about .about-text h2 {
+        font-size: 1.8rem; /* Adjusted size */
       }
 
-      #contact .social-icons {
+      #about .about-text p {
+        font-size: 0.9rem; /* Adjusted size */
+      }
+
+      .partner-logos {
+        flex-wrap: wrap;
         gap: 20px;
       }
 
-      #contact .social-icons a {
-        font-size: 2.5rem;
+      .partner-logos img {
+        width: 50px; /* Smaller size */
+      }
+
+      footer .social-icons a {
+        font-size: 1.2rem; /* Adjusted size */
       }
     }
   </style>
@@ -327,7 +380,7 @@
     </video>
     <h2>Welcome to My Portfolio</h2>
     <p>A journey of growth, achievements, and inspiration</p>
-    <a href="#about" class="cta-button">Connect with Me</a>
+    <a href="https://wa.me/447537175422" class="cta-button" target="_blank">Contact Me</a>
   </section>
 
   <!-- About Me Section -->
@@ -337,19 +390,17 @@
       <p>
         Abdallah Nofan is an ambitious ethical hacker raised in Jordan, where his passion for technology and problem-solving began. His journey led him to uncover critical vulnerabilities in systems, earning him international recognition in the bug bounty community.  
         <br><br>
-        After making significant contributions, he relocated to the UK to work at Meta’s London office, specifically at King’s Cross, where he continues to tackle complex cybersecurity challenges. Simultaneously, he is pursuing his sixth year in medical school, blending his expertise in technology and medicine. Abdallah's mission is to innovate and protect, ensuring safety in both digital and healthcare landscapes.
+        After making significant contributions, he relocated to the <strong>UK<img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="UK Flag"></strong> to work at Meta’s London office, specifically at King’s Cross, where he continues to tackle complex cybersecurity challenges. Simultaneously, he is pursuing his sixth year in medical school, blending his expertise in technology and medicine. Abdallah's mission is to innovate and protect, ensuring safety in both digital and healthcare landscapes.
       </p>
-    </div>
-    <div class="about-image">
-      <img src="https://via.placeholder.com/400" alt="Abdallah Nofan">
     </div>
   </section>
 
   <!-- Partners Section -->
   <section id="partners">
-    <h2>Our Partners</h2>
+    <h2>Partners</h2>
     <div class="partner-logos">
       <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Meta_Logo_2023.svg" alt="Meta">
       <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
       <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
     </div>
@@ -358,13 +409,31 @@
   <!-- Footer Section -->
   <footer>
     <div class="social-icons">
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/abdallahnofann/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
     </div>
     <p>© Abdallah Nofan 2025. All rights reserved.</p>
-    <p><a href="#hero">Back to top</a></p>
+    <button id="back-to-top" aria-label="Back to Top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
   </footer>
+
+  <script>
+    // Back to Top Button
+    window.addEventListener('scroll', function () {
+      const backToTop = document.getElementById('back-to-top');
+      if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    });
+
+    document.getElementById('back-to-top').addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 
 </body>
 </html>
